@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <LangVersion>7.2</LangVersion>
+    <RuntimeIdentifier>win10-x64</RuntimeIdentifier>  
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="McMaster.Extensions.CommandLineUtils, Version=2.2.5.0, Culture=neutral, PublicKeyToken=6f71cb76b82f055d">
+      <HintPath>..\..\..\..\Users\gavan\.nuget\packages\mcmaster.extensions.commandlineutils\2.2.5\lib\netstandard2.0\McMaster.Extensions.CommandLineUtils.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60">
+      <HintPath>..\..\..\..\Users\gavan\.nuget\packages\microsoft.extensions.dependencyinjection\2.1.1\lib\netstandard2.0\Microsoft.Extensions.DependencyInjection.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60">
+      <HintPath>..\..\..\..\Users\gavan\.nuget\packages\microsoft.extensions.dependencyinjection.abstractions\2.1.1\lib\netstandard2.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NuDe\NuDe.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="docfx.console" Version="2.39.1" />
+    <PackageReference Include="McMaster.Extensions.CommandLineUtils" Version="2.2.5" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="2.1.1" />
+  </ItemGroup>
+</Project>
